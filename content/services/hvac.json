@@ -1,0 +1,22 @@
+{
+  "name_en": "HVAC Systems",
+  "name_sq": "Sistemet HVAC",
+  "description_en": "Professional HVAC design, installation, and maintenance services for residential, commercial, and industrial applications. Energy-efficient climate control solutions tailored to your needs.",
+  "description_sq": "Shërbime profesionale të dizajnimit, instalimit dhe mirëmbajtjes HVAC për aplikacione rezidenciale, komerciale dhe industriale. Zgjidhje të kontrollit të klimës efikas energjetikisht të përshtatura për nevojat tuaja.",
+  "image": "images/dewatermark.ai_1762155246998.jpeg",
+  "icon": "❄️",
+  "features": [
+    {
+      "feature_en": "System Design & Installation",
+      "feature_sq": "Dizajni & Instalimi i Sistemit"
+    },
+    {
+      "feature_en": "Energy Efficiency Optimization",
+      "feature_sq": "Optimizimi i Efikasitetit Energjetik"
+    },
+    {
+      "feature_en": "Regular Maintenance Programs",
+      "feature_sq": "Programe të Rregullta të Mirëmbajtjes"
+    }
+  ]
+}

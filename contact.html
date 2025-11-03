@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with EJONA for engineering solutions. Contact us for elevators, HVAC, waterworks and fire-supressing services across Kosovo.">
+    <title>Contact Us - EJONA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="logo-img">
+                </a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-sq="Ballina">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" data-en="Services" data-sq="Shërbimet">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë Lëvizëse">Elevators & Escalators</a></li>
+                            <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                            <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html" class="nav-link" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                    <li><a href="products.html" class="nav-link" data-en="Products" data-sq="Produktet">Products</a></li>
+                    <li><a href="partner.html" class="nav-link" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-en="Contact" data-sq="Kontakti">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="lang-toggle" id="langToggle" aria-label="Language toggle">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">|</span>
+                        <span class="lang-option" data-lang="sq">SQ</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Contact Us" data-sq="Na Kontaktoni">Contact Us</h1>
+            <p class="page-subtitle" data-en="We're here to help with your engineering needs" data-sq="Jemi këtu për t'ju ndihmuar me nevojat tuaja inxhinierike">
+                We're here to help with your engineering needs
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 data-en="Call Us" data-sq="Na Telefononi">Call Us</h3>
+                    <p data-en="Available 24/7 for emergencies" data-sq="E disponueshme 24/7 për raste emergjente">Available 24/7 for emergencies</p>
+                    <a href="tel:+38349137987">+383 49137987</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3 data-en="Email Us" data-sq="Dërgoni Email">Email Us</h3>
+                    <p data-en="Response within 24 hours" data-sq="Përgjigje brenda 24 orëve">Response within 24 hours</p>
+                    <a href="mailto:info@ejona.com">info@ejona.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 data-en="Visit Us" data-sq="Na Vizitoni">Visit Us</h3>
+                    <p data-en="Main Office" data-sq="Zyra Kryesore">Main Office</p>
+                    <p data-en="Pristina, Kosovo" data-sq="Prishtinë, Kosovë">Pristina, Kosovo</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <h2 class="section-title" style="margin-top: 80px; margin-bottom: 40px;" data-en="Send Us a Message" data-sq="Dërgoni një Mesazh">Send Us a Message</h2>
+
+            <div class="form-section">
+                <form id="contactForm" action="https://formspree.io/f/YOUR_CONTACT_FORM_ID" method="POST">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission from EJONA Website">
+                    <input type="hidden" name="_next" value="https://yourdomain.com/contact.html">
+                    <div class="form-group">
+                        <label for="name" data-en="Full Name *" data-sq="Emri i Plotë *">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name" data-en="Your name" data-sq="Emri juaj">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-en="Email Address *" data-sq="Email Adresa *">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="info@ejona.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-en="Phone Number" data-sq="Numri i Telefonit">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+383 49 137 987" data-en="+383 49 137 987" data-sq="+383 49 137 987">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject" data-sq="Subjekti">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="" data-en="Select a subject" data-sq="Zgjidhni një subjekt">Select a subject</option>
+                            <option value="quote" data-en="Request a Quote" data-sq="Kërko Ofertë">Request a Quote</option>
+                            <option value="service" data-en="Service Request" data-sq="Kërkesë për Shërbim">Service Request</option>
+                            <option value="support" data-en="Technical Support" data-sq="Mbështetje Teknike">Technical Support</option>
+                            <option value="partnership" data-en="Partnership Inquiry" data-sq="Pyetje për Partneritet">Partnership Inquiry</option>
+                            <option value="general" data-en="General Inquiry" data-sq="Pyetje të Përgjithshme">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-en="Message *" data-sq="Mesazhi *">Message *</label>
+                        <textarea id="message" name="message" required placeholder="How can we help you?" data-en="How can we help you?" data-sq="Si mund t'ju ndihmojmë?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit" data-en="Send Message" data-sq="Dërgo Mesazhin">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <div data-en="Map Location - Google Maps Integration" data-sq="Vendndodhja në Hartë - Integrimi i Google Maps">
+                    Map Location - Google Maps Integration
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-en="Need Immediate Assistance?" data-sq="Keni Nevojë për Ndihmë të Menjëhershme?">Need Immediate Assistance?</h2>
+                <p class="cta-text" data-en="Our technical support team is available 24/7 for emergencies" data-sq="Ekipi ynë i mbështetjes teknike është i disponueshëm 24/7 për raste emergjente">
+                    Our technical support team is available 24/7 for emergencies
+                </p>
+                <div class="cta-buttons">
+                    <a href="tel:+383XXXXXXX" class="btn btn-primary" data-en="Call Emergency Line" data-sq="Telefono Linjën e Emergjencës">Call Emergency Line</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="footer-logo-img">
+                    <p class="footer-description" data-en="Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo." data-sq="Furnizuesi kryesor i zgjidhjeve inxhinierike për ashensorë, HVAC dhe ujësjellës në Kosovë.">
+                        Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Quick Links" data-sq="Lidhje të Shpejta">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                        <li><a href="services.html" data-en="Services" data-sq="Shërbimet">Services</a></li>
+                        <li><a href="projects.html" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                        <li><a href="products.html" data-en="Products" data-sq="Produktet">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Services" data-sq="Shërbimet">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë Lëvizëse">Elevators & Escalators</a></li>
+                        <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                        <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        <li><a href="partner.html" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Contact Info" data-sq="Informacion Kontakti">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span data-en="Phone:" data-sq="Telefoni:">Phone:</span> +383 XX XXX XXX
+                        </li>
+                        <li>
+                            <span data-en="Email:" data-sq="Email:">Email:</span> info@ejona.com
+                        </li>
+                        <li>
+                            <span data-en="Address:" data-sq="Adresa:">Address:</span> <span data-en="Pristina, Kosovo" data-sq="Prishtinë, Kosovë">Pristina, Kosovo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EJONA. <span data-en="All rights reserved." data-sq="Të gjitha të drejtat e rezervuara.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cms-loader.js"></script>
+</body>
+</html>

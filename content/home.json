@@ -1,0 +1,91 @@
+{
+  "hero_title_en": "Engineering Excellence in Building Systems",
+  "hero_title_sq": "Përsosmëria Inxhinierike në Sistemet e Ndërtimit",
+  "hero_subtitle_en": "Leading provider of elevators, HVAC, and waterworks solutions across Kosovo and the region with 24/7 technical support",
+  "hero_subtitle_sq": "Furnizuesi kryesor i ashensorëve, HVAC dhe zgjidhjeve të ujësjellësit në Kosovë dhe rajon, me mbështetje teknike 24/7",
+  "stats": {
+    "engineers": 50,
+    "projects": 500,
+    "support": "24/7",
+    "years": 15
+  },
+  "why_choose": {
+    "image": "images/dewatermark.ai_1762155246998.jpeg",
+    "features": [
+      {
+        "title_en": "European Quality Standards",
+        "title_sq": "Standarde Evropiane të Cilësisë",
+        "description_en": "All systems and products from Europe's most reputable manufacturers",
+        "description_sq": "Të gjitha sistemet dhe produktet nga prodhuesit më të njohur evropianë"
+      },
+      {
+        "title_en": "Expert Technical Team",
+        "title_sq": "Ekip Teknik Ekspert",
+        "description_en": "50+ specialized engineers and technicians trained by leading European manufacturers",
+        "description_sq": "50+ inxhinierë dhe teknik të specializuar, të trajnuar nga prodhuesit kryesorë evropianë"
+      },
+      {
+        "title_en": "24/7 Support Network",
+        "title_sq": "Rrjet Mbështetjeje 24/7",
+        "description_en": "Round-the-clock technical assistance across all major cities",
+        "description_sq": "Asistencë teknike 24 orë në të gjitha qytetet kryesore"
+      },
+      {
+        "title_en": "Long-term Solutions",
+        "title_sq": "Zgjidhje Afatgjata",
+        "description_en": "Focus on quality installations that minimize future maintenance needs",
+        "description_sq": "Fokus në instalime cilësore që minimizojnë nevojat e ardhshme për mirëmbajtje"
+      }
+    ]
+  },
+  "client_logos": [
+    {
+      "logo": "images/logo.png",
+      "name": "SHKSUK"
+    },
+    {
+      "logo": "images/rbko_logo_header.png",
+      "name": "Raiffeisen Bank Kosovo"
+    },
+    {
+      "logo": "images/161103372fe7ad72e34caeb51699f2ae10d72c.jpg",
+      "name": "NNP Standard "
+    },
+    {
+      "logo": "images/305814417_133652979400167_2877114536793889758_n.jpg",
+      "name": "Grand Residence Prizren"
+    },
+    {
+      "logo": "images/mpb.jpg",
+      "name": "Ministria e Punëve të Brendshme"
+    },
+    {
+      "logo": "images/logo-2t-verdhe.png",
+      "name": "2T SH.P.K"
+    },
+    {
+      "logo": "images/termokos_logo.png",
+      "name": "Termokos"
+    },
+    {
+      "logo": "images/cropped-logo-png.png",
+      "name": "K.R.U Prishtina"
+    },
+    {
+      "logo": "images/logopng.webp",
+      "name": "K.R.U Hidrodrini"
+    },
+    {
+      "logo": "images/komuna-e-prishtines.png",
+      "name": "Komuna e Prishtinës"
+    },
+    {
+      "logo": "images/procredit-20bank_13.jpg",
+      "name": "ProCredit Bank Kosova"
+    },
+    {
+      "logo": "images/logoja.jpg",
+      "name": "K.R.U Hidroregjioni Jugor"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "home": {
+    "title_sq": "Gati të Filloni Projektin Tuaj?",
+    "background_image": "images/pexels-artempodrez-5716037.jpg",
+    "button1_text_sq": "Na Kontaktoni",
+    "text_sq": "Kontaktoni ekipin tonë ekspert për një konsultë dhe ofertë falas",
+    "title_en": "Ready to Start Your Project?",
+    "button2_text_sq": "Bëhu Partner",
+    "button2_link": "partner.html",
+    "button1_link": "contact.html",
+    "text_en": "Get in touch with our expert team for a free consultation and quote",
+    "button1_text_en": "Contact Us",
+    "button2_text_en": "Become a Partner"
+  },
+  "about": {
+    "title_sq": "Gati të Punoni me Ne?",
+    "background_image": "images/pexels-fauxels-3184465.jpg",
+    "button1_text_sq": "Na Kontaktoni",
+    "text_sq": "Le të diskutojmë se si mund t'ju ndihmojmë me projektin tuaj të ardhshëm",
+    "title_en": "Ready to Work With Us?",
+    "button2_text_sq": "Shiko Punën Tonë",
+    "button2_link": "projects.html",
+    "button1_link": "contact.html",
+    "text_en": "Let's discuss how we can help with your next project",
+    "button1_text_en": "Contact Us",
+    "button2_text_en": "View Our Work"
+  },
+  "services": {
+    "title_sq": "Keni Nevojë për Zgjidhje të Personalizuar?",
+    "background_image": "images/pexels-thisisengineering-3862384.jpg",
+    "button1_text_sq": "Merr një Ofertë",
+    "text_sq": "Ekipi ynë mund të projektojë dhe implementojë sisteme të përshtatura për kërkesat tuaja specifike",
+    "title_en": "Need a Custom Solution?",
+    "button2_text_sq": "Shiko Projektet",
+    "button2_link": "projects.html",
+    "button1_link": "contact.html",
+    "text_en": "Our team can design and implement tailored systems for your specific requirements",
+    "button1_text_en": "Get a Quote",
+    "button2_text_en": "View Projects"
+  },
+  "projects": {
+    "title_sq": "Keni një Projekt në Mendje?",
+    "background_image": "images/pexels-shvetsa-5324973.jpg",
+    "button1_text_sq": "Filloni Projektin Tuaj",
+    "text_sq": "Le ta sjellim vizionin tuaj në jetë me ekspertizën tonë dhe zgjidhje cilësore",
+    "title_en": "Have a Project in Mind?",
+    "button2_text_sq": "Shërbimet Tona",
+    "button2_link": "services.html",
+    "button1_link": "contact.html",
+    "text_en": "Let's bring your vision to life with our expertise and quality solutions",
+    "button1_text_en": "Start Your Project",
+    "button2_text_en": "Our Services"
+  },
+  "products": {
+    "title_sq": "Të Interesuar për Produktet Tona?",
+    "background_image": "images/pexels-tiger-lily-4483860.jpg",
+    "button1_text_sq": "Na Kontaktoni",
+    "text_sq": "Kontaktoni për të mësuar më shumë rreth markave dhe zgjidhjeve tona premium",
+    "title_en": "Interested in Our Products?",
+    "button2_text_sq": "Bëhu Partner",
+    "button2_link": "partner.html",
+    "button1_link": "contact.html",
+    "text_en": "Contact us to learn more about our premium brands and solutions",
+    "button1_text_en": "Contact Us",
+    "button2_text_en": "Become a Partner"
+  },
+  "contact": {
+    "title_sq": "Vizitoni Zyrën Tonë",
+    "background_image": "images/pexels-rezwan-1145434.jpg",
+    "button1_text_sq": "Shiko Projektet",
+    "text_sq": "Kaloni në zyrën tonë për të diskutuar projektin tuaj personalisht ose planifikoni një vizitë në kantier",
+    "title_en": "Visit Our Office",
+    "button2_text_sq": "Shërbimet Tona",
+    "button2_link": "services.html",
+    "button1_link": "projects.html",
+    "text_en": "Stop by our office to discuss your project in person or schedule a site visit",
+    "button1_text_en": "View Projects",
+    "button2_text_en": "Our Services"
+  }
+}

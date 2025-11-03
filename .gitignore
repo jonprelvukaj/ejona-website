@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules (if using any build tools)
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.log
+*.tmp
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build outputs (if any)
+dist/
+build/

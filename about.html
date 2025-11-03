@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about EJONA's history, team, and commitment to engineering excellence in Kosovo.">
+    <title>About Us - EJONA Engineering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="logo-img">
+                </a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-sq="Ballina">Home</a></li>
+                    <li><a href="about.html" class="nav-link active" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" data-en="Services" data-sq="Shërbimet">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë">Elevators & Escalators</a></li>
+                            <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                            <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html" class="nav-link" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                    <li><a href="products.html" class="nav-link" data-en="Products" data-sq="Produktet">Products</a></li>
+                    <li><a href="partner.html" class="nav-link" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    <li><a href="contact.html" class="nav-link" data-en="Contact" data-sq="Kontakti">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="lang-toggle" id="langToggle" aria-label="Language toggle">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">|</span>
+                        <span class="lang-option" data-lang="sq">SQ</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="About EJONA" data-sq="Rreth EJONA">About EJONA</h1>
+            <p class="page-subtitle" data-en="Building the future of infrastructure in Kosovo" data-sq="Duke ndërtuar të ardhmen e infrastrukturës në Kosovë">
+                Building the future of infrastructure in Kosovo
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="company-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title" data-en="Our Story" data-sq="Historia Jonë">Our Story</h2>
+                    <div class="text-content">
+                        <!-- Content loaded from CMS -->
+                    </div>
+                </div>
+                <div class="story-image">
+                    <div class="image-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 500 400" fill="none">
+                            <rect width="500" height="400" fill="url(#gradient2)"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="500" y2="400">
+                                    <stop offset="0%" style="stop-color:#F5B700"/>
+                                    <stop offset="100%" style="stop-color:#2C2C2C"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section" style="display: none;">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-image">
+                    <div class="image-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 400 500" fill="none">
+                            <rect width="400" height="500" fill="url(#gradient3)"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="400" y2="500">
+                                    <stop offset="0%" style="stop-color:#F5B700"/>
+                                    <stop offset="100%" style="stop-color:#2C2C2C"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="founder-text">
+                    <h2 class="section-title founder-name" data-en="Our Founder" data-sq="Themeluesit Tonë">Our Founder</h2>
+                    <h4 class="founder-title" data-en="" data-sq=""></h4>
+                    <div class="text-content founder-bio">
+                        <p data-en="" data-sq=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="mission-values">
+        <div class="container">
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 data-en="Our Mission" data-sq="Misioni Ynë">Our Mission</h3>
+                    <p data-en="To provide cutting-edge engineering solutions that enhance the quality of life and contribute to Kosovo's infrastructure development through innovation, quality, and reliability." data-sq="Të ofrojmë zgjidhje inxhinierike të avancuara që përmirësojnë cilësinë e jetës dhe kontribuojnë në zhvillimin e infrastrukturës së Kosovës përmes inovacionit, cilësisë dhe besueshmërisë.">
+                        To provide cutting-edge engineering solutions that enhance the quality of life and contribute to Kosovo's infrastructure development through innovation, quality, and reliability.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👁️</div>
+                    <h3 data-en="Our Vision" data-sq="Vizioni Ynë">Our Vision</h3>
+                    <p data-en="To be the leading engineering solutions provider in the region, recognized for our technical excellence, customer satisfaction, and contribution to sustainable infrastructure development." data-sq="Të jemi ofruesi kryesor i zgjidhjeve inxhinierike në rajon, i njohur për përsosmërinë tonë teknike, kënaqësinë e klientit dhe kontributin në zhvillimin e qëndrueshëm të infrastrukturës.">
+                        To be the leading engineering solutions provider in the region, recognized for our technical excellence, customer satisfaction, and contribution to sustainable infrastructure development.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3 data-en="Our Values" data-sq="Vlerat Tona">Our Values</h3>
+                    <p data-en="Quality first, customer focus, continuous innovation, technical expertise, reliability, and commitment to long-term partnerships that drive mutual success and sustainable growth." data-sq="Cilësia e parë, fokusi në klient, inovacioni i vazhdueshëm, ekspertiza teknike, besueshmëria dhe angazhimi për partneritete afatgjata që nxisin suksesin reciprok dhe rritjen e qëndrueshme.">
+                        Quality first, customer focus, continuous innovation, technical expertise, reliability, and commitment to long-term partnerships that drive mutual success and sustainable growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Expert Team" data-sq="Ekipi Ynë Ekspert">Our Expert Team</h2>
+                <p class="section-subtitle" data-en="50+ specialized engineers and technicians trained by Europe's leading manufacturers" data-sq="50+ inxhinierë dhe teknicienë të specializuar të trajnuar nga prodhuesit kryesorë evropianë">
+                    50+ specialized engineers and technicians trained by Europe's leading manufacturers
+                </p>
+            </div>
+
+            <div class="team-features">
+                <div class="team-feature">
+                    <div class="feature-number">50+</div>
+                    <h4 data-en="Expert Engineers" data-sq="Inxhinierë Ekspertë">Expert Engineers</h4>
+                    <p data-en="Highly qualified professionals with international certifications" data-sq="Profesionistë shumë të kualifikuar me certifikime ndërkombëtare">
+                        Highly qualified professionals with international certifications
+                    </p>
+                </div>
+                <div class="team-feature">
+                    <div class="feature-number">24/7</div>
+                    <h4 data-en="Technical Support" data-sq="Mbështetje Teknike">Technical Support</h4>
+                    <p data-en="Round-the-clock assistance across all major cities" data-sq="Asistencë 24 orë në të gjitha qytetet kryesore">
+                        Round-the-clock assistance across all major cities
+                    </p>
+                </div>
+                <div class="team-feature">
+                    <div class="feature-number">100%</div>
+                    <h4 data-en="Manufacturer Trained" data-sq="Të Trajnuar nga Prodhuesit">Manufacturer Trained</h4>
+                    <p data-en="All technicians trained directly by equipment manufacturers" data-sq="Të gjithë teknicienët të trajnuar direkt nga prodhuesit e pajisjeve">
+                        All technicians trained directly by equipment manufacturers
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Certifications & Partnerships" data-sq="Certifikatat & Partneritetet">Certifications & Partnerships</h2>
+                <p class="section-subtitle" data-en="Authorized partners of Europe's leading manufacturers" data-sq="Partnerë të autorizuar të prodhuesve kryesorë evropianë">
+                    Authorized partners of Europe's leading manufacturers
+                </p>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-placeholder" data-en="ISO Certification" data-sq="Certifikatë ISO">ISO 9001</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-placeholder" data-en="Quality Management" data-sq="Menaxhimi i Cilësisë">Quality</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-placeholder" data-en="Safety Standards" data-sq="Standardet e Sigurisë">Safety</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-placeholder" data-en="Environmental" data-sq="Mjedisore">Environment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-about">
+        <div class="container">
+            <h2 class="section-title" data-en="Why Choose EJONA?" data-sq="Pse të Zgjidhni EJONA?">Why Choose EJONA?</h2>
+
+            <div class="reasons-grid">
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="European Quality Standards" data-sq="Standarde Evropiane të Cilësisë">European Quality Standards</h4>
+                    <p data-en="All our systems and products come from the most reputable European manufacturers, ensuring world-class quality and durability." data-sq="Të gjitha sistemet dhe produktet tona vijnë nga prodhuesit më të njohur evropianë, duke siguruar cilësi dhe qëndrueshmëri të klasit botëror.">
+                        All our systems and products come from the most reputable European manufacturers, ensuring world-class quality and durability.
+                    </p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="Comprehensive Support" data-sq="Mbështetje Gjithëpërfshirëse">Comprehensive Support</h4>
+                    <p data-en="From initial consultation to installation and maintenance, our expert team provides full-cycle support for every project." data-sq="Nga konsulta fillestare në instalim dhe mirëmbajtje, ekipi ynë ekspert ofron mbështetje të plotë për çdo projekt.">
+                        From initial consultation to installation and maintenance, our expert team provides full-cycle support for every project.
+                    </p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="Long-term Solutions" data-sq="Zgjidhje Afatgjata">Long-term Solutions</h4>
+                    <p data-en="We focus on quality installations that minimize future maintenance needs, saving you time and money in the long run." data-sq="Ne fokusohemi në instalime cilësore që minimizojnë nevojat e ardhshme për mirëmbajtje, duke ju kursyer kohë dhe para në afat të gjatë.">
+                        We focus on quality installations that minimize future maintenance needs, saving you time and money in the long run.
+                    </p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="Proven Track Record" data-sq="Rekord i Vërtetuar">Proven Track Record</h4>
+                    <p data-en="With hundreds of successful projects across Kosovo, we have the experience and expertise to handle any challenge." data-sq="Me qindra projekte të suksesshme në të gjithë Kosovën, ne kemi përvojën dhe ekspertizën për të përballuar çdo sfidë.">
+                        With hundreds of successful projects across Kosovo, we have the experience and expertise to handle any challenge.
+                    </p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="Innovation Focus" data-sq="Fokus në Inovacion">Innovation Focus</h4>
+                    <p data-en="We stay ahead of industry trends, continuously adopting new technologies and best practices to serve our clients better." data-sq="Ne qëndrojmë përpara tendencave të industrisë, duke adoptuar vazhdimisht teknologji të reja dhe praktika më të mira për t'i shërbyer më mirë klientëve tanë.">
+                        We stay ahead of industry trends, continuously adopting new technologies and best practices to serve our clients better.
+                    </p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">✓</div>
+                    <h4 data-en="Customer Satisfaction" data-sq="Kënaqësia e Klientit">Customer Satisfaction</h4>
+                    <p data-en="Our success is measured by the satisfaction of our clients. We go above and beyond to exceed expectations on every project." data-sq="Suksesi ynë matet me kënaqësinë e klientëve tanë. Ne shkojmë përtej për të tejkaluar pritjet në çdo projekt.">
+                        Our success is measured by the satisfaction of our clients. We go above and beyond to exceed expectations on every project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-en="Ready to Work With Us?" data-sq="Gati të Punoni me Ne?">Ready to Work With Us?</h2>
+                <p class="cta-text" data-en="Let's discuss how we can help with your next project" data-sq="Le të diskutojmë se si mund t'ju ndihmojmë me projektin tuaj të ardhshëm">
+                    Let's discuss how we can help with your next project
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-en="Contact Us" data-sq="Na Kontaktoni">Contact Us</a>
+                    <a href="projects.html" class="btn btn-secondary-white" data-en="View Our Work" data-sq="Shiko Punën Tonë">View Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="footer-logo-img">
+                    <p class="footer-description" data-en="Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo." data-sq="Furnizuesi kryesor i zgjidhjeve inxhinierike për ashensorë, HVAC dhe ujësjellës në Kosovë.">
+                        Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Quick Links" data-sq="Lidhje të Shpejta">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                        <li><a href="services.html" data-en="Services" data-sq="Shërbimet">Services</a></li>
+                        <li><a href="projects.html" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                        <li><a href="products.html" data-en="Products" data-sq="Produktet">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Services" data-sq="Shërbimet">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë">Elevators & Escalators</a></li>
+                        <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                        <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        <li><a href="partner.html" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Contact Info" data-sq="Informacion Kontakti">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span data-en="Phone:" data-sq="Telefoni:">Phone:</span> +383 XX XXX XXX
+                        </li>
+                        <li>
+                            <span data-en="Email:" data-sq="Email:">Email:</span> info@ejona.com
+                        </li>
+                        <li>
+                            <span data-en="Address:" data-sq="Adresa:">Address:</span> <span data-en="Pristina, Kosovo" data-sq="Prishtinë, Kosovë">Pristina, Kosovo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EJONA. <span data-en="All rights reserved." data-sq="Të gjitha të drejtat e rezervuara.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cms-loader.js"></script>
+</body>
+</html>

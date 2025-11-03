@@ -1,0 +1,22 @@
+{
+  "name_en": "Elevators & Escalators",
+  "name_sq": "Ashensorë & Shkallë Lëvizëse",
+  "description_en": "Complete elevator and escalator solutions including installation, maintenance, and modernization. We work with leading global brands to deliver safe, reliable, and efficient vertical transportation systems.",
+  "description_sq": "Zgjidhje të plota të ashensorëve dhe shkallëve, duke përfshirë instalimin, mirëmbajtjen dhe modernizimin. Punojmë me markat kryesore globale për të ofruar sisteme transporti vertikal të sigurt, të besueshëm dhe efikas.",
+  "image": "images/cg-x-persp-s.jpg",
+  "icon": "🛗",
+  "features": [
+    {
+      "feature_en": "Supply & Installation",
+      "feature_sq": "Furnizimi & Instalimi"
+    },
+    {
+      "feature_en": "Servicing & Installation",
+      "feature_sq": "Servisimi & Mirëmbajtja"
+    },
+    {
+      "feature_en": "Modernization of Old Elevators",
+      "feature_sq": "Modernizimi i Ashensorëve të Vjetër"
+    }
+  ]
+}

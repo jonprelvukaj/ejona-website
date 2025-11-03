@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the premium brands and products distributed by EJONA across Kosovo.">
+    <title>Our Products & Brands - EJONA Engineering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="logo-img">
+                </a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-sq="Ballina">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" data-en="Services" data-sq="Shërbimet">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë">Elevators & Escalators</a></li>
+                            <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                            <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html" class="nav-link" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                    <li><a href="products.html" class="nav-link active" data-en="Products" data-sq="Produktet">Products</a></li>
+                    <li><a href="partner.html" class="nav-link" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    <li><a href="contact.html" class="nav-link" data-en="Contact" data-sq="Kontakti">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="lang-toggle" id="langToggle" aria-label="Language toggle">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">|</span>
+                        <span class="lang-option" data-lang="sq">SQ</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Our Products & Brands" data-sq="Produktet & Markat Tona">Our Products & Brands</h1>
+            <p class="page-subtitle" data-en="Premium European brands exclusively distributed by EJONA" data-sq="Marka evropiane premium të shpërndara ekskluzivisht nga EJONA">
+                Premium European brands exclusively distributed by EJONA
+            </p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="products-section" style="padding-top: 60px; background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle" data-en="We partner with Europe's most reputable manufacturers to bring world-class engineering products to Kosovo. Every brand we represent is carefully selected for quality, reliability, and innovation." data-sq="Ne bashkëpunojmë me prodhuesit më të njohur evropianë për të sjellë produkte inxhinierike të klasit botëror në Kosovë. Çdo markë që përfaqësojmë është zgjedhur me kujdes për cilësi, besueshmëri dhe inovacion.">
+                    We partner with Europe's most reputable manufacturers to bring world-class engineering products to Kosovo. Every brand we represent is carefully selected for quality, reliability, and innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Elevator Brands" data-sq="Markat e Ashensorëve">Elevator Brands</h2>
+            <div class="products-grid">
+                <!-- Products loaded dynamically from CMS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" style="background: var(--background);">
+        <div class="container">
+            <h2 class="section-title" data-en="HVAC Brands" data-sq="Markat HVAC">HVAC Brands</h2>
+            <div class="products-grid">
+                <!-- Products loaded dynamically from CMS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Waterworks & Fire Protection Brands" data-sq="Markat e Ujësjellësit & Mbrojtjes nga Zjarri">Waterworks & Fire Protection Brands</h2>
+            <div class="products-grid">
+                <!-- Products loaded dynamically from CMS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="Product image" class="lightbox-img">
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-en="Interested in Our Products?" data-sq="Të Interesuar në Produktet Tona?">Interested in Our Products?</h2>
+                <p class="cta-text" data-en="Contact us to learn more about our product offerings and find the perfect solution for your project" data-sq="Kontaktoni për të mësuar më shumë rreth ofertave tona të produkteve dhe për të gjetur zgjidhjen e përsosur për projektin tuaj">
+                    Contact us to learn more about our product offerings and find the perfect solution for your project
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-en="Contact Us" data-sq="Na Kontaktoni">Contact Us</a>
+                    <a href="partner.html" class="btn btn-secondary-white" data-en="Become a Distributor" data-sq="Bëhu Shpërndarës">Become a Distributor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="images/LOGO EJONA REVISED (1).png" alt="EJONA Logo" class="footer-logo-img">
+                    <p class="footer-description" data-en="Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo." data-sq="Furnizuesi kryesor i zgjidhjeve inxhinierike për ashensorë, HVAC dhe ujësjellës në Kosovë.">
+                        Leading provider of engineering solutions for elevators, HVAC, and waterworks across Kosovo.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Quick Links" data-sq="Lidhje të Shpejta">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                        <li><a href="services.html" data-en="Services" data-sq="Shërbimet">Services</a></li>
+                        <li><a href="projects.html" data-en="Projects" data-sq="Projektet">Projects</a></li>
+                        <li><a href="products.html" data-en="Products" data-sq="Produktet">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Services" data-sq="Shërbimet">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#elevators" data-en="Elevators & Escalators" data-sq="Ashensorë & Shkallë">Elevators & Escalators</a></li>
+                        <li><a href="services.html#hvac" data-en="HVAC Systems" data-sq="Sistemet HVAC">HVAC Systems</a></li>
+                        <li><a href="services.html#waterworks" data-en="Waterworks & Fire Protection" data-sq="Ujësjellës & Mbrojtje nga Zjarri">Waterworks & Fire Protection</a></li>
+                        <li><a href="partner.html" data-en="Become a Partner" data-sq="Bëhu Partner">Become a Partner</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title" data-en="Contact Info" data-sq="Informacion Kontakti">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span data-en="Phone:" data-sq="Telefoni:">Phone:</span> +383 XX XXX XXX
+                        </li>
+                        <li>
+                            <span data-en="Email:" data-sq="Email:">Email:</span> info@ejona.com
+                        </li>
+                        <li>
+                            <span data-en="Address:" data-sq="Adresa:">Address:</span> <span data-en="Pristina, Kosovo" data-sq="Prishtinë, Kosovë">Pristina, Kosovo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EJONA. <span data-en="All rights reserved." data-sq="Të gjitha të drejtat e rezervuara.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cms-loader.js"></script>
+</body>
+</html>

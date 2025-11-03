@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {
+      "image": "images/cg-x-persp-s.jpg",
+      "alt": "Modern elevator system"
+    },
+    {
+      "image": "images/schindler-metro-prague-karlovo-namesti-station.jpg",
+      "alt": "Escalator system in metro station"
+    },
+    {
+      "image": "images/vitocal_produktfamilie-16-9-1920x1080px.avif",
+      "alt": "HVAC climate control systems"
+    },
+    {
+      "image": "images/wmremove-transformed.jpeg"
+    },
+    {
+      "image": "images/vitomax-hs-wernesgruener-16-9-1920x1080px.avif"
+    },
+    {
+      "image": "images/understanding-the-basics-of-commercial-hvac-systems.jpg"
+    },
+    {
+      "image": "images/5-28-elite-pumps.jpg"
+    },
+    {
+      "image": "images/industrial-hvac-systems.jpg"
+    }
+  ]
+}

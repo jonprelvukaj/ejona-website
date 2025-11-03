@@ -1,0 +1,37 @@
+{
+  "vision_en": "We envision becoming the leading reference in the region for integrated building-services systems, known for innovation, trustworthiness and sustainable performance. By combining cutting-edge technology with expert technical support, we aim to raise the standards of infrastructure and elevate the built-environment experience for businesses and communities.",
+  "story_sq": "E themeluar në vitin 1990 në Pejë, EJONA Sh.P.K. është një kompani lidere në ofrimin e zgjidhjeve teknike për ngrohje, ftohje, ventilim, klimatizim, ujësjellës, kanalizim, ashensorë dhe shkallë lëvizëse.\n\nSi përfaqësuese e autorizuar e markave botërore, ne ofrojmë produkte dhe shërbime me cilësi të lartë, të bazuara në teknologji moderne dhe standarde ndërkombëtare ISO.\n\nFalë ekipit tonë profesionist dhe përvojës shumëvjeçare, kemi realizuar qindra projekte në mbarë Kosovën dhe rajonin, duke ndërtuar një reputacion të fortë për inovacion, besueshmëri dhe efikasitet.\n\n\n\nEJONA Sh.P.K. – Partneri juaj për zgjidhje moderne teknike.",
+  "founder": {
+    "name_en": "Hysni Prelvukaj",
+    "name_sq": "Hysni Prelvukaj",
+    "title_en": "CEO",
+    "title_sq": "CEO",
+    "image": "images/dsc_3518-copy.jpeg",
+    "bio_sq": "Ecc. Hysni Prelvukaj, i lindur në Plavë, përfundoi studimet universitare në Universitetin e Prishtinës – Fakulteti i Ekonomisë, dhe vazhdoi studimet master në Universitetin e Zagrebit, në Departamentin e Turizmit.\n\nNë vitin 1990, ai themeloi kompaninë “ejona”, e cila edhe sot vazhdon të jetë një ndër kompanitë më serioze në fushat ku është specializuar.\n\nHysi ka dhënë gjithashtu një kontribut të madh në sportin kosovar, veçanërisht në volejboll, ku themeloi klubin e volejbollit të qytetit “Ejona Peja”.",
+    "bio_en": "Ecc. Hysni Prelvukaj, born in Plava, finished his university studies at the University of Pristina – Faculty of Economics, and continued his master’s degree at the University of Zagreb, Department of Tourism.\n\nIn 1990, he founded “ejona” where even today it continues to be one of the most serious companies in the activities it specializes in.\n\nHysni also made a great contribution to Kosovar sports, more specifically in volleyball, where he founded the city’s volleyball club, “Ejona Peja”."
+  },
+  "story_image": "images/276302075_10224690429520781_7068000855641646922_n-1-.jpg",
+  "mission_sq": "Në EJONA Sh.P.K., misioni ynë është të ofrojmë zgjidhje teknike cilësore, të besueshme dhe me efikasitet të lartë energjetik për sistemet e ngrohjes, ventilimit, klimatizimit, furnizimit me ujë, kanalizimit, ashensorëve dhe shkallëve lëvizëse në mbarë Kosovën dhe rajonin e Ballkanit. Ne synojmë të bashkëpunojmë me prodhues të nivelit botëror dhe të ofrojmë ekipe instalimi dhe mirëmbajtjeje profesionale, duke siguruar vlerë afatgjatë dhe siguri për klientët tanë.",
+  "story_en": "Founded in 1990 in Peja, EJONA Sh.P.K. is a leading company providing technical solutions for heating, cooling, ventilation, air conditioning, water supply, sewerage, elevators, and escalators.\n\nAs an authorized representative of global brands, we deliver high-quality products and services based on modern technology and international ISO standards.\n\nWith a professional team and years of experience, we have completed hundreds of projects across Kosovo and the region, building a strong reputation for innovation, reliability, and efficiency.\n\n\n\nEJONA Sh.P.K. – Your partner for modern technical solutions.",
+  "vision_sq": "Ne synojmë të bëhemi referenca kryesore në rajon për sistemet e integruara të shërbimeve teknike të ndërtesave, të njohur për inovacion, besueshmëri dhe performancë të qëndrueshme. Duke kombinuar teknologjinë bashkëkohore me mbështetjen teknike profesionale, ne synojmë të ngrisim standardet e infrastrukturës dhe të përmirësojmë përvojën e hapësirave të ndërtuara për biznese dhe komunitete.",
+  "certifications": {
+    "items": [
+      {
+        "name_en": "ISO 9001",
+        "name_sq": "ISO 9001",
+        "image": "images/iso-9001.jpg"
+      },
+      {
+        "name_en": "ISO 14001",
+        "name_sq": "ISO 14001",
+        "image": "images/iso-14001.jpg"
+      },
+      {
+        "name_en": "ISO 45001",
+        "name_sq": "ISO 45001",
+        "image": "images/iso-45001.jpg"
+      }
+    ]
+  },
+  "mission_en": "At EJONA Sh.P.K., our mission is to deliver high-quality, reliable and energy-efficient technical solutions for heating, ventilation, air-conditioning, water supply, sewage, elevators and escalators across Kosovo and the wider Balkan region. We strive to partner with world-class manufacturers and deploy best-in-class installation and after-sales service teams, ensuring long-term value and peace of mind for our clients."
+}

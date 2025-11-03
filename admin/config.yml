@@ -1,0 +1,274 @@
+backend:
+  name: git-gateway
+  branch: main # Change this to your branch name
+
+# For local development
+local_backend: true
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Hero Slider"
+        name: "hero-slider"
+        file: "content/hero-slider.json"
+        fields:
+          - label: "Slides"
+            name: "slides"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Alt Text", name: "alt", widget: "string", required: false}
+
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - {label: "Hero Title (English)", name: "hero_title_en", widget: "string"}
+          - {label: "Hero Title (Albanian)", name: "hero_title_sq", widget: "string"}
+          - {label: "Hero Subtitle (English)", name: "hero_subtitle_en", widget: "text"}
+          - {label: "Hero Subtitle (Albanian)", name: "hero_subtitle_sq", widget: "text"}
+          - label: "Statistics"
+            name: "stats"
+            widget: "object"
+            fields:
+              - {label: "Engineers Count", name: "engineers", widget: "number", default: 50}
+              - {label: "Projects Count", name: "projects", widget: "number", default: 500}
+              - {label: "Support Hours", name: "support", widget: "string", default: "24/7"}
+              - {label: "Years of Excellence", name: "years", widget: "number", default: 15}
+          - label: "Why Choose Us"
+            name: "why_choose"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - {label: "Title (English)", name: "title_en", widget: "string"}
+                  - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+                  - {label: "Description (English)", name: "description_en", widget: "text"}
+                  - {label: "Description (Albanian)", name: "description_sq", widget: "text"}
+          - label: "Client Logos"
+            name: "client_logos"
+            widget: "list"
+            fields:
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Client Name", name: "name", widget: "string"}
+
+      - label: "Contact Information"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Partners Email", name: "partners_email", widget: "string"}
+          - {label: "Address (English)", name: "address_en", widget: "text"}
+          - {label: "Address (Albanian)", name: "address_sq", widget: "text"}
+          - {label: "Google Maps Embed URL", name: "google_maps_url", widget: "text", required: false, hint: "Paste the entire iframe HTML from Google Maps embed (we'll extract the URL automatically)"}
+
+      - label: "Call to Action Sections"
+        name: "cta"
+        file: "content/cta.json"
+        fields:
+          - label: "Home Page CTA"
+            name: "home"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          - label: "About Page CTA"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          - label: "Services Page CTA"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          - label: "Projects Page CTA"
+            name: "projects"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          - label: "Products Page CTA"
+            name: "products"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+          - label: "Contact Page CTA"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title (English)", name: "title_en", widget: "string"}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string"}
+              - {label: "Text (English)", name: "text_en", widget: "text"}
+              - {label: "Text (Albanian)", name: "text_sq", widget: "text"}
+              - {label: "Button 1 Text (English)", name: "button1_text_en", widget: "string"}
+              - {label: "Button 1 Text (Albanian)", name: "button1_text_sq", widget: "string"}
+              - {label: "Button 1 Link", name: "button1_link", widget: "string"}
+              - {label: "Button 2 Text (English)", name: "button2_text_en", widget: "string", required: false}
+              - {label: "Button 2 Text (Albanian)", name: "button2_text_sq", widget: "string", required: false}
+              - {label: "Button 2 Link", name: "button2_link", widget: "string", required: false}
+              - {label: "Background Image", name: "background_image", widget: "image", required: false}
+
+      - label: "Become a Partner Page"
+        name: "partner"
+        file: "content/partner.json"
+        fields:
+          - {label: "Page Title (English)", name: "title_en", widget: "string"}
+          - {label: "Page Title (Albanian)", name: "title_sq", widget: "string"}
+          - {label: "Page Subtitle (English)", name: "subtitle_en", widget: "text"}
+          - {label: "Page Subtitle (Albanian)", name: "subtitle_sq", widget: "text"}
+          - {label: "Intro Title (English)", name: "intro_title_en", widget: "string"}
+          - {label: "Intro Title (Albanian)", name: "intro_title_sq", widget: "string"}
+          - {label: "Intro Text (English)", name: "intro_text_en", widget: "text"}
+          - {label: "Intro Text (Albanian)", name: "intro_text_sq", widget: "text"}
+          - {label: "Form Section Title (English)", name: "form_title_en", widget: "string", default: "Apply to Become a Partner"}
+          - {label: "Form Section Title (Albanian)", name: "form_title_sq", widget: "string", default: "Aplikoni për të Bërë Partner"}
+          - {label: "Form Section Description (English)", name: "form_desc_en", widget: "text", default: "Fill out the form below and our partnership team will contact you within 48 hours to discuss opportunities."}
+          - {label: "Form Section Description (Albanian)", name: "form_desc_sq", widget: "text", default: "Plotësoni formularin më poshtë dhe ekipi ynë i partneritetit do t'ju kontaktojë brenda 48 orëve për të diskutuar mundësitë."}
+
+      - label: "About Page"
+        name: "about"
+        file: "content/about.json"
+        fields:
+          - {label: "Company Story (English)", name: "story_en", widget: "markdown"}
+          - {label: "Company Story (Albanian)", name: "story_sq", widget: "markdown"}
+          - {label: "Story Image", name: "story_image", widget: "image", required: false}
+          - {label: "Mission (English)", name: "mission_en", widget: "text"}
+          - {label: "Mission (Albanian)", name: "mission_sq", widget: "text"}
+          - {label: "Vision (English)", name: "vision_en", widget: "text"}
+          - {label: "Vision (Albanian)", name: "vision_sq", widget: "text"}
+          - label: "Founder Section"
+            name: "founder"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Founder Name (English)", name: "name_en", widget: "string", required: false}
+              - {label: "Founder Name (Albanian)", name: "name_sq", widget: "string", required: false}
+              - {label: "Title (English)", name: "title_en", widget: "string", required: false}
+              - {label: "Title (Albanian)", name: "title_sq", widget: "string", required: false}
+              - {label: "Founder Image", name: "image", widget: "image", required: false}
+              - {label: "Biography (English)", name: "bio_en", widget: "markdown", required: false}
+              - {label: "Biography (Albanian)", name: "bio_sq", widget: "markdown", required: false}
+          - label: "Certifications Section"
+            name: "certifications"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Section Title (English)", name: "title_en", widget: "string", default: "Certifications"}
+              - {label: "Section Title (Albanian)", name: "title_sq", widget: "string", default: "Certifikatat"}
+              - {label: "Section Subtitle (English)", name: "subtitle_en", widget: "text", required: false}
+              - {label: "Section Subtitle (Albanian)", name: "subtitle_sq", widget: "text", required: false}
+              - label: "Certificates"
+                name: "items"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Certificate Name (English)", name: "name_en", widget: "string"}
+                  - {label: "Certificate Name (Albanian)", name: "name_sq", widget: "string"}
+                  - {label: "Certificate Image", name: "image", widget: "image"}
+
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Service Name (English)", name: "name_en", widget: "string"}
+      - {label: "Service Name (Albanian)", name: "name_sq", widget: "string"}
+      - {label: "Description (English)", name: "description_en", widget: "markdown"}
+      - {label: "Description (Albanian)", name: "description_sq", widget: "markdown"}
+      - {label: "Service Image", name: "image", widget: "image", required: false}
+      - {label: "Icon", name: "icon", widget: "string", hint: "Icon name or emoji"}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Feature (English)", name: "feature_en", widget: "string"}
+          - {label: "Feature (Albanian)", name: "feature_sq", widget: "string"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Project Name (English)", name: "title_en", widget: "string"}
+      - {label: "Project Name (Albanian)", name: "title_sq", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["elevators", "hvac", "waterworks"]}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description (English)", name: "description_en", widget: "text", required: false}
+      - {label: "Description (Albanian)", name: "description_sq", widget: "text", required: false}
+
+  - name: "products"
+    label: "Products & Brands"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Brand Name", name: "brand", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["elevators", "hvac", "waterworks"]}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Description (English)", name: "description_en", widget: "text"}
+      - {label: "Description (Albanian)", name: "description_sq", widget: "text"}
