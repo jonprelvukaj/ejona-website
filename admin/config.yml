@@ -63,16 +63,16 @@ collections:
               - {label: "Logo", name: "logo", widget: "image"}
               - {label: "Client Name", name: "name", widget: "string"}
 
-      - label: "Contact Information"
+      - label: "Contact Page & Footer Info"
         name: "contact"
         file: "content/contact.json"
         fields:
-          - {label: "Phone Number", name: "phone", widget: "string"}
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Partners Email", name: "partners_email", widget: "string"}
-          - {label: "Address (English)", name: "address_en", widget: "text"}
-          - {label: "Address (Albanian)", name: "address_sq", widget: "text"}
-          - {label: "Google Maps Embed URL", name: "google_maps_url", widget: "text", required: false, hint: "Paste the entire iframe HTML from Google Maps embed (we'll extract the URL automatically)"}
+          - {label: "Phone Number", name: "phone", widget: "string", hint: "Displayed on contact page and all footers. Format: +383 49 137 987"}
+          - {label: "Email", name: "email", widget: "string", hint: "Main contact email displayed on contact page and footers"}
+          - {label: "Partners Email", name: "partners_email", widget: "string", hint: "Email for partnership inquiries"}
+          - {label: "Office Address (English)", name: "address_en", widget: "string", hint: "Displayed in Visit Us card and all footers"}
+          - {label: "Office Address (Albanian)", name: "address_sq", widget: "string", hint: "Albanian translation of the address"}
+          - {label: "Google Maps Embed", name: "google_maps_url", widget: "text", required: false, hint: "Paste the entire iframe HTML from Google Maps embed code"}
 
       - label: "Call to Action Sections"
         name: "cta"
