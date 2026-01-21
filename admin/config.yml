@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main # Change this to your branch name
+  branch: main
 
-# For local development
-local_backend: true
+# Uncomment line below for local development only
+# local_backend: true
 
 media_folder: "images"
 public_folder: "images"

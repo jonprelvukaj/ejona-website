@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Netlify Identity Widget for CMS login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -29,6 +31,9 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link active" data-en="Home" data-sq="Ballina">Home</a></li>
                     <li><a href="about.html" class="nav-link" data-en="About Us" data-sq="Rreth Nesh">About Us</a></li>
+                    <!-- Store link hidden until ready
+                    <li><a href="https://store.ejona.com" class="nav-link" data-en="Store" data-sq="Dyqani" target="_blank" rel="noopener noreferrer">Store</a></li>
+                    -->
                     <li class="dropdown">
                         <a href="services.html" class="nav-link" data-en="Services" data-sq="Shërbimet">Services</a>
                         <ul class="dropdown-menu">
@@ -339,5 +344,16 @@
 
     <script src="js/main.js"></script>
     <script src="js/cms-loader.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>
