@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>EJONA Content Manager</title>
-  <!-- Netlify Identity Widget -->
+  <!-- Netlify Identity Widget - pointing to Netlify site -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    // Initialize Netlify Identity with the correct site URL
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.init({
+        APIUrl: "https://zesty-starlight-87a69b.netlify.app/.netlify/identity"
+      });
+    }
+  </script>
 </head>
 <body>
   <!-- Include the Decap CMS script -->

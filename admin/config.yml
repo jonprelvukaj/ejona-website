@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+# Point to the Netlify site for identity/git-gateway
+site_url: https://zesty-starlight-87a69b.netlify.app
+base_url: https://zesty-starlight-87a69b.netlify.app
+
 # Uncomment line below for local development only
 # local_backend: true
 
