@@ -146,9 +146,42 @@ function initPageLoaders() {
         loadPartnerContent();
     }
 
-    // Load Google Maps on contact page
+    // Load contact content (for contact page this loads everything, for other pages just footer)
     if (page === 'contact') {
-        loadContactMap();
+        loadContactContent();
+    } else {
+        // Load footer contact info on all pages
+        loadFooterContactInfo();
+    }
+}
+
+// Load only footer contact info (for non-contact pages)
+async function loadFooterContactInfo() {
+    try {
+        const response = await fetch('content/contact.json');
+        if (!response.ok) return;
+
+        const data = await response.json();
+
+        // Update footer contact info
+        const footerPhone = document.querySelector('.footer-contact .footer-phone');
+        if (footerPhone && data.phone) {
+            footerPhone.textContent = data.phone;
+        }
+
+        const footerEmail = document.querySelector('.footer-contact .footer-email');
+        if (footerEmail && data.email) {
+            footerEmail.textContent = data.email;
+        }
+
+        const footerAddress = document.querySelector('.footer-contact .footer-address');
+        if (footerAddress && data.address_en) {
+            footerAddress.setAttribute('data-en', data.address_en);
+            footerAddress.setAttribute('data-sq', data.address_sq);
+            footerAddress.textContent = currentLang === 'sq' ? data.address_sq : data.address_en;
+        }
+    } catch (error) {
+        console.error('Error loading footer contact info:', error);
     }
 }
 
@@ -213,20 +246,67 @@ async function loadPartnerContent() {
     }
 }
 
-// Load Contact Map
-async function loadContactMap() {
+// Load Contact Page Content (phone, email, address, map)
+async function loadContactContent() {
     try {
         const response = await fetch('content/contact.json');
         if (!response.ok) return;
 
         const data = await response.json();
 
+        // Update phone number
+        const phoneLink = document.querySelector('.contact-card a[href^="tel:"]');
+        if (phoneLink && data.phone) {
+            const phoneClean = data.phone.replace(/\s/g, '');
+            phoneLink.href = `tel:${phoneClean}`;
+            phoneLink.textContent = data.phone;
+        }
+
+        // Update email
+        const emailLink = document.querySelector('.contact-card a[href^="mailto:"]');
+        if (emailLink && data.email) {
+            emailLink.href = `mailto:${data.email}`;
+            emailLink.textContent = data.email;
+        }
+
+        // Update address
+        const addressCard = document.querySelector('.contact-card .contact-address');
+        if (addressCard && data.address_en) {
+            addressCard.setAttribute('data-en', data.address_en);
+            addressCard.setAttribute('data-sq', data.address_sq);
+            addressCard.textContent = currentLang === 'sq' ? data.address_sq : data.address_en;
+        }
+
+        // Update footer contact info as well
+        const footerPhone = document.querySelector('.footer-contact .footer-phone');
+        if (footerPhone && data.phone) {
+            footerPhone.textContent = data.phone;
+        }
+
+        const footerEmail = document.querySelector('.footer-contact .footer-email');
+        if (footerEmail && data.email) {
+            footerEmail.textContent = data.email;
+        }
+
+        const footerAddress = document.querySelector('.footer-contact .footer-address');
+        if (footerAddress && data.address_en) {
+            footerAddress.setAttribute('data-en', data.address_en);
+            footerAddress.setAttribute('data-sq', data.address_sq);
+            footerAddress.textContent = currentLang === 'sq' ? data.address_sq : data.address_en;
+        }
+
+        // Load Google Maps
         if (data.google_maps_url) {
             loadGoogleMap(data.google_maps_url);
         }
     } catch (error) {
-        console.error('Error loading contact map:', error);
+        console.error('Error loading contact content:', error);
     }
+}
+
+// Legacy function name for backwards compatibility
+async function loadContactMap() {
+    loadContactContent();
 }
 
 // Run page loaders when DOM is ready
