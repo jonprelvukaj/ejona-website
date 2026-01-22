@@ -118,7 +118,7 @@ async function loadServicesImages() {
 
 // Initialize page-specific loaders
 function initPageLoaders() {
-    const pathname = window.location.pathname;
+    const pathname = window.location.pathname.replace(/\/$/, ''); // Remove trailing slash
     const page = pathname.substring(pathname.lastIndexOf('/') + 1).replace('.html', '') || 'index';
 
     // Map pages to CTA names
