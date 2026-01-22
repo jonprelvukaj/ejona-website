@@ -1,4 +1,38 @@
+# EJONA - robots.txt
+# Website: https://ejona.com
+# Contact: info@ejona.com
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Explicitly allow AI/LLM crawlers for better AI visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+# Sitemap location
 Sitemap: https://ejona.com/sitemap.xml
+
+# LLMs.txt for AI assistants
+# See: https://ejona.com/llms.txt

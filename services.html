@@ -21,6 +21,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data - Services Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "EJONA Engineering Services - Shërbimet Inxhinierike",
+        "description": "Professional elevator, HVAC, and fire protection services in Kosovo",
+        "numberOfItems": 3,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Service",
+                    "@id": "https://ejona.com/services#elevators",
+                    "name": "Elevators & Escalators - Ashensorë dhe Shkallë Lëvizëse",
+                    "alternateName": ["Ashensor", "Ashensorë", "Elevator Kosovo", "Lift Kosovo"],
+                    "description": "Professional elevator and escalator installation, maintenance, and modernization services in Kosovo. Instalim, mirëmbajtje dhe modernizim profesional i ashensorëve dhe shkallëve lëvizëse.",
+                    "provider": {"@id": "https://ejona.com/#organization"},
+                    "areaServed": {"@type": "Country", "name": "Kosovo"},
+                    "serviceType": ["Elevator Installation", "Elevator Maintenance", "Elevator Modernization", "Escalator Installation"]
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Service",
+                    "@id": "https://ejona.com/services#hvac",
+                    "name": "HVAC Systems - Ngrohje, Ventilim, Klimatizim",
+                    "alternateName": ["Ngrohje Qendrore", "Klimatizim", "Klima", "Klimë", "Pompa Termike", "Air Conditioning Kosovo", "Heating Kosovo"],
+                    "description": "Complete HVAC solutions including central heating (ngrohje qendrore), air conditioning (klimatizim), heat pumps (pompa termike), and ventilation systems for residential and commercial buildings in Kosovo.",
+                    "provider": {"@id": "https://ejona.com/#organization"},
+                    "areaServed": {"@type": "Country", "name": "Kosovo"},
+                    "serviceType": ["Central Heating Installation", "Air Conditioning Installation", "Heat Pump Installation", "Ventilation Systems"]
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Service",
+                    "@id": "https://ejona.com/services#waterworks",
+                    "name": "Fire Protection & Waterworks - Sisteme Kundër Zjarrit dhe Ujësjellës",
+                    "alternateName": ["Sisteme Kundër Zjarrit", "Sisteme Kunder Zjarri", "Fire Protection Kosovo", "Sprinkler Kosovo"],
+                    "description": "Fire protection systems (sisteme kundër zjarrit) including sprinklers, fire alarms, and suppression systems. Also waterworks and plumbing solutions for commercial and industrial buildings.",
+                    "provider": {"@id": "https://ejona.com/#organization"},
+                    "areaServed": {"@type": "Country", "name": "Kosovo"},
+                    "serviceType": ["Fire Sprinkler Systems", "Fire Alarm Systems", "Fire Suppression", "Waterworks", "Plumbing"]
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Breadcrumb for Services Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ejona.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Services - Shërbimet", "item": "https://ejona.com/services"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->

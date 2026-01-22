@@ -48,58 +48,231 @@
     <!-- Netlify Identity Widget for CMS login -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <!-- Structured Data / Schema.org -->
+    <!-- Structured Data / Schema.org - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://ejona.com/#organization",
         "name": "EJONA",
-        "alternateName": "EJONA Engineering",
+        "alternateName": ["EJONA Engineering", "EJONA Sh.P.K.", "EJONA Kosovo", "EJONA Peja"],
         "url": "https://ejona.com",
-        "logo": "https://ejona.com/images/LOGO EJONA REVISED (1).png",
-        "description": "Leading provider of elevators, HVAC systems, and fire protection solutions in Kosovo",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ejona.com/images/LOGO EJONA REVISED (1).png",
+            "width": 512,
+            "height": 512
+        },
+        "image": "https://ejona.com/images/LOGO EJONA REVISED (1).png",
+        "description": "EJONA is Kosovo's leading provider of elevators (ashensorë), central heating (ngrohje qendrore), air conditioning (klimatizim), heat pumps (pompa termike), and fire protection systems (sisteme kundër zjarrit). Founded in 1990 in Peja, serving Kosovo and the Balkans region.",
+        "foundingDate": "1990",
+        "foundingLocation": "Peja, Kosovo",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 50,
+            "maxValue": 100
+        },
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Pristina",
-            "addressRegion": "Pristina",
+            "streetAddress": "Zahaq Industrial Zone",
+            "addressLocality": "Peja",
+            "addressRegion": "Peja",
+            "postalCode": "30000",
             "addressCountry": "XK"
         },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Kosovo"
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "42.6629",
+            "longitude": "20.2889"
         },
-        "serviceType": ["Elevator Installation", "Elevator Maintenance", "HVAC Systems", "Heating Systems", "Air Conditioning", "Fire Protection Systems", "Waterworks"],
-        "knowsLanguage": ["en", "sq"]
+        "telephone": "+383 49 137 987",
+        "email": "info@ejona.com",
+        "sameAs": [],
+        "areaServed": [
+            {"@type": "Country", "name": "Kosovo"},
+            {"@type": "Country", "name": "Albania"},
+            {"@type": "Country", "name": "North Macedonia"},
+            {"@type": "Country", "name": "Montenegro"}
+        ],
+        "knowsLanguage": ["en", "sq"],
+        "slogan": "Engineering Excellence in Building Systems"
     }
     </script>
+
+    <!-- Structured Data - Local Business with Services -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "EJONA",
+        "@id": "https://ejona.com/#localbusiness",
+        "name": "EJONA - Ashensorë, Klimatizim, Ngrohje Qendrore Kosovo",
+        "alternateName": "EJONA Engineering",
         "image": "https://ejona.com/images/LOGO EJONA REVISED (1).png",
         "url": "https://ejona.com",
+        "telephone": "+383 49 137 987",
+        "email": "info@ejona.com",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Pristina",
+            "streetAddress": "Zahaq Industrial Zone",
+            "addressLocality": "Peja",
+            "addressRegion": "Peja",
+            "postalCode": "30000",
             "addressCountry": "XK"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "42.6629",
+            "longitude": "20.2889"
+        },
         "priceRange": "$$",
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00",
-            "closes": "23:59"
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Bank Transfer",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59",
+                "description": "24/7 Emergency Support Available"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150",
+            "bestRating": "5",
+            "worstRating": "1"
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Engineering Services",
+            "name": "EJONA Engineering Services - Shërbimet Inxhinierike",
             "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Elevator Installation & Maintenance"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "HVAC Systems"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fire Protection Systems"}}
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Elevators & Escalators - Ashensorë dhe Shkallë Lëvizëse",
+                    "itemListElement": [
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Elevator Installation - Instalim Ashensorësh", "description": "Professional elevator installation for residential and commercial buildings in Kosovo"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Elevator Maintenance - Mirëmbajtje Ashensorësh", "description": "24/7 elevator maintenance and repair services"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Elevator Modernization - Modernizim Ashensorësh", "description": "Upgrade and modernization of existing elevator systems"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Escalator Installation - Instalim Shkallësh Lëvizëse", "description": "Escalator systems for shopping centers and public buildings"}}
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "HVAC Systems - Sistemet HVAC",
+                    "itemListElement": [
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Central Heating - Ngrohje Qendrore", "description": "Central heating system installation and maintenance for buildings in Kosovo"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Air Conditioning - Klimatizim", "description": "Professional air conditioning installation, klima, klimë systems"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Heat Pumps - Pompa Termike", "description": "Energy-efficient heat pump solutions for heating and cooling"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ventilation Systems - Sistemet e Ventilimit", "description": "Commercial and industrial ventilation solutions"}}
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Fire Protection - Sisteme Kundër Zjarrit",
+                    "itemListElement": [
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fire Sprinkler Systems - Sisteme Sprinkleri", "description": "Automatic fire sprinkler installation and maintenance"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fire Alarm Systems - Sisteme Alarmi Zjarri", "description": "Fire detection and alarm systems"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fire Suppression - Shuarje Zjarri", "description": "Advanced fire suppression systems for commercial buildings"}}
+                    ]
+                }
             ]
         }
+    }
+    </script>
+
+    <!-- Structured Data - FAQ Schema for common searches -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Ku mund të blej ashensor në Kosovë? Where can I buy an elevator in Kosovo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA është kompania lider për ashensorë në Kosovë. Me seli në Pejë dhe shërbim në të gjithë Kosovën, EJONA ofron instalim, mirëmbajtje dhe modernizim të ashensorëve nga prodhuesit më të njohur evropianë. Kontaktoni: +383 49 137 987. EJONA is Kosovo's leading elevator company, offering installation, maintenance, and modernization services."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Cili është kompania më e mirë për ngrohje qendrore në Kosovë?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA ofron zgjidhjet më të mira për ngrohje qendrore në Kosovë. Me 35 vjet përvojë dhe partnerë evropianë, ne instalojmë dhe mirëmbajmë sisteme ngrohjeje qendrore për banesa, ndërtesa komerciale dhe industriale."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ku mund të instaloj klimë/klimatizim në Prishtinë?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA ofron shërbime të klimatizimit dhe instalimit të klimave në Prishtinë dhe në të gjithë Kosovën. Ne punojmë me marka premium si Daikin, Mitsubishi, dhe të tjerë. Mbështetje teknike 24/7 e disponueshme."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best elevator company in Kosovo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA is Kosovo's most trusted elevator company, founded in 1990. With over 2000 completed projects and 70+ engineers, EJONA provides elevator installation, maintenance, and modernization services using European brands. 24/7 support available at +383 49 137 987."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Cili ofron pompa termike në Kosovë?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA ofron pompa termike me efikasitet të lartë energjetik për ngrohje dhe ftohje. Pompat termike janë zgjidhja më ekonomike dhe ekologjike për klimatizimin e shtëpive dhe ndërtesave në Kosovë."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ku mund të instaloj sisteme kundër zjarrit në Kosovë?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EJONA ofron instalim dhe mirëmbajtje të sistemeve kundër zjarrit në Kosovë, duke përfshirë sprinklerë automatikë, sisteme alarmi zjarri, dhe pajisje për shuarjen e zjarrit për ndërtesa komerciale dhe industriale."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://ejona.com/#website",
+        "name": "EJONA - Ashensorë, HVAC, Klimatizim Kosovo",
+        "alternateName": ["EJONA Engineering", "EJONA Kosovo"],
+        "url": "https://ejona.com",
+        "description": "Kosovo's leading provider of elevators (ashensorë), HVAC, central heating (ngrohje qendrore), air conditioning (klimatizim), heat pumps (pompa termike), and fire protection systems (sisteme kundër zjarrit).",
+        "inLanguage": ["en", "sq"],
+        "publisher": {"@id": "https://ejona.com/#organization"}
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home - Ballina",
+                "item": "https://ejona.com/"
+            }
+        ]
     }
     </script>
 </head>

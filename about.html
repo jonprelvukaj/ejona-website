@@ -21,6 +21,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data - About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About EJONA - Rreth Nesh",
+        "description": "Learn about EJONA's 35+ years of engineering excellence in Kosovo. Founded in 1990 in Peja, EJONA is the leading provider of elevators, HVAC, and fire protection systems.",
+        "mainEntity": {
+            "@type": "Organization",
+            "@id": "https://ejona.com/#organization",
+            "name": "EJONA",
+            "foundingDate": "1990",
+            "foundingLocation": {
+                "@type": "Place",
+                "name": "Peja, Kosovo"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Hysni Prelvukaj",
+                "jobTitle": "CEO & Founder"
+            },
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "minValue": 50,
+                "maxValue": 100
+            },
+            "award": ["ISO 9001 Certified", "ISO 14001 Certified", "ISO 45001 Certified"]
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb for About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ejona.com/"},
+            {"@type": "ListItem", "position": 2, "name": "About Us - Rreth Nesh", "item": "https://ejona.com/about"}
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation (same as index.html) -->
