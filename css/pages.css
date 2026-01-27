@@ -136,8 +136,17 @@
 }
 
 .value-icon {
-    font-size: 4rem;
     margin-bottom: 24px;
+    color: var(--primary-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-icon svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--primary-yellow);
 }
 
 .value-card h3 {
@@ -263,6 +272,12 @@
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 20px;
+}
+
+.reason-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--white);
 }
 
 .reason-item h4 {
