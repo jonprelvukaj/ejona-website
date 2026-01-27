@@ -502,14 +502,11 @@ async function loadProjects() {
                     </div>
                 `;
 
-                // Add click handler for lightbox
-                const img = projectElement.querySelector('img');
-                if (img) {
-                    img.addEventListener('click', () => {
-                        openLightbox(project.image);
-                    });
-                    img.style.cursor = 'pointer';
-                }
+                // Add click handler for lightbox with project details
+                projectElement.addEventListener('click', () => {
+                    openProjectLightbox(project);
+                });
+                projectElement.style.cursor = 'pointer';
 
                 galleryGrid.appendChild(projectElement);
             } catch (err) {
@@ -544,6 +541,53 @@ function openLightbox(imageSrc) {
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
+}
+
+function openProjectLightbox(project) {
+    const lightbox = document.querySelector('.project-lightbox');
+    if (!lightbox) return;
+
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxTitle = lightbox.querySelector('.lightbox-title');
+    const lightboxDescription = lightbox.querySelector('.lightbox-description');
+    const lightboxCategory = lightbox.querySelector('.lightbox-category');
+
+    // Set image
+    if (lightboxImg) {
+        if (project.image) {
+            lightboxImg.src = project.image;
+            lightboxImg.style.display = 'block';
+        } else {
+            lightboxImg.style.display = 'none';
+        }
+    }
+
+    // Set title based on current language
+    if (lightboxTitle) {
+        const title = currentLang === 'sq' ? project.title_sq : project.title_en;
+        lightboxTitle.textContent = title;
+        lightboxTitle.setAttribute('data-en', project.title_en);
+        lightboxTitle.setAttribute('data-sq', project.title_sq);
+    }
+
+    // Set description based on current language
+    if (lightboxDescription) {
+        const desc = currentLang === 'sq' ? project.description_sq : project.description_en;
+        lightboxDescription.textContent = desc;
+        lightboxDescription.setAttribute('data-en', project.description_en);
+        lightboxDescription.setAttribute('data-sq', project.description_sq);
+    }
+
+    // Set category
+    if (lightboxCategory) {
+        const categoryName = getCategoryName(project.category, currentLang);
+        lightboxCategory.textContent = categoryName;
+        lightboxCategory.setAttribute('data-en', getCategoryName(project.category, 'en'));
+        lightboxCategory.setAttribute('data-sq', getCategoryName(project.category, 'sq'));
+    }
+
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 // Load projects when page loads
