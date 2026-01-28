@@ -73,7 +73,15 @@ function switchLanguage(lang) {
         option.classList.toggle('active', option.getAttribute('data-lang') === lang);
     });
 
-    // Update all translatable elements
+    // Apply language to all elements
+    applyLanguage(lang);
+
+    // Save language preference
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+// Helper function to apply language to all translatable elements (can be called without changing currentLang)
+function applyLanguage(lang) {
     const translatableElements = document.querySelectorAll('[data-en][data-sq]');
     translatableElements.forEach(element => {
         const translation = element.getAttribute(`data-${lang}`);
@@ -86,9 +94,6 @@ function switchLanguage(lang) {
             }
         }
     });
-
-    // Save language preference
-    localStorage.setItem('preferredLanguage', lang);
 }
 
 // Load saved language preference
@@ -494,11 +499,15 @@ async function loadProjects() {
                     ? `<img src="${project.image}" alt="${project.title_en}" style="width: 100%; height: 100%; object-fit: cover;">`
                     : `<div class="image-placeholder" style="width: 100%; height: 100%; background: linear-gradient(135deg, #F5B700, #2C2C2C);"></div>`;
 
+                // Use current language for initial display
+                const displayTitle = currentLang === 'sq' ? project.title_sq : project.title_en;
+                const displayCategory = getCategoryName(project.category, currentLang);
+
                 projectElement.innerHTML = `
                     ${imageContent}
                     <div class="gallery-overlay">
-                        <div class="gallery-title" data-en="${project.title_en}" data-sq="${project.title_sq}">${project.title_en}</div>
-                        <div class="gallery-category" data-en="${getCategoryName(project.category, 'en')}" data-sq="${getCategoryName(project.category, 'sq')}">${getCategoryName(project.category, 'en')}</div>
+                        <div class="gallery-title" data-en="${project.title_en}" data-sq="${project.title_sq}">${displayTitle}</div>
+                        <div class="gallery-category" data-en="${getCategoryName(project.category, 'en')}" data-sq="${getCategoryName(project.category, 'sq')}">${displayCategory}</div>
                     </div>
                 `;
 
@@ -515,9 +524,7 @@ async function loadProjects() {
         }
 
         // Re-apply language to new elements
-        if (currentLang === 'sq') {
-            switchLanguage('sq');
-        }
+        applyLanguage(currentLang);
 
     } catch (error) {
         console.error('Error loading projects:', error);
