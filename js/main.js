@@ -300,8 +300,22 @@ function showNotification(message, type = 'info') {
 // ===================================
 // Image Gallery (for projects page)
 // ===================================
-const galleryItems = document.querySelectorAll('.gallery-item');
 const filterButtons = document.querySelectorAll('.filter-btn');
+
+// Filter function that works with dynamically loaded projects
+function filterProjects(filter) {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            setTimeout(() => item.classList.add('show'), 10);
+        } else {
+            item.classList.remove('show');
+            setTimeout(() => item.style.display = 'none', 300);
+        }
+    });
+}
 
 if (filterButtons.length > 0) {
     filterButtons.forEach(button => {
@@ -312,17 +326,8 @@ if (filterButtons.length > 0) {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
 
-            // Filter gallery items
-            galleryItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    item.style.display = 'block';
-                    setTimeout(() => item.classList.add('show'), 10);
-                } else {
-                    item.classList.remove('show');
-                    setTimeout(() => item.style.display = 'none', 300);
-                }
-            });
+            // Filter gallery items (query fresh each time)
+            filterProjects(filter);
         });
     });
 }
@@ -465,18 +470,32 @@ async function loadProjects() {
     if (!galleryGrid) return;
 
     try {
-        // Get list of all project files
-        const projectFiles = [
-            'office-tower-project.json',
-            'shopping-mall-hvac.json',
-            'municipal-water-system.json',
-            'residential-complex.json',
-            'hotel-climate-control.json',
-            'fire-protection-system.json',
-            'hospital-elevator-system.json',
-            'industrial-hvac.json',
-            'city-water-infrastructure.json'
-        ];
+        // Load project list from index file
+        let projectFiles = [];
+        try {
+            const indexResponse = await fetch('content/projects/index.json');
+            if (indexResponse.ok) {
+                const indexData = await indexResponse.json();
+                projectFiles = indexData.projects || [];
+            }
+        } catch (e) {
+            console.log('No index file found, using fallback list');
+        }
+
+        // Fallback if index doesn't exist
+        if (projectFiles.length === 0) {
+            projectFiles = [
+                'office-tower-project.json',
+                'shopping-mall-hvac.json',
+                'municipal-water-system.json',
+                'residential-complex.json',
+                'hotel-climate-control.json',
+                'fire-protection-system.json',
+                'hospital-elevator-system.json',
+                'industrial-hvac.json',
+                'city-water-infrastructure.json'
+            ];
+        }
 
         // Clear existing projects
         galleryGrid.innerHTML = '';

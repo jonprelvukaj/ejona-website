@@ -1,0 +1,13 @@
+{
+  "projects": [
+    "office-tower-project.json",
+    "shopping-mall-hvac.json",
+    "municipal-water-system.json",
+    "residential-complex.json",
+    "hotel-climate-control.json",
+    "fire-protection-system.json",
+    "hospital-elevator-system.json",
+    "industrial-hvac.json",
+    "city-water-infrastructure.json"
+  ]
+}

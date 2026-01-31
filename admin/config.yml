@@ -248,6 +248,19 @@ collections:
           - {label: "Feature (English)", name: "feature_en", widget: "string"}
           - {label: "Feature (Albanian)", name: "feature_sq", widget: "string"}
 
+  - name: "project-list"
+    label: "Project List"
+    files:
+      - label: "Projects Index"
+        name: "projects-index"
+        file: "content/projects/index.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            hint: "Add the filename of each project (e.g., my-project.json). Add new entries when you create new projects."
+            field: {label: "Filename", name: "filename", widget: "string"}
+
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
