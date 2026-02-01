@@ -1,0 +1,40 @@
+name: Update Project Index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/projects/*.json'
+      - '!content/projects/index.json'
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Update project index
+        run: node scripts/update-project-index.js
+
+      - name: Check for changes
+        id: check
+        run: |
+          git diff --exit-code content/projects/index.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add content/projects/index.json
+          git commit -m "Auto-update project index"
+          git push
