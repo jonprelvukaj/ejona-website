@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const projectsDir = path.join(__dirname, '..', 'content', 'projects');
-const indexFile = path.join(projectsDir, 'index.json');
+const indexFile = path.join(__dirname, '..', 'content', 'project-index.json');
 
 // Get all JSON files except index.json
 const projectFiles = fs.readdirSync(projectsDir)

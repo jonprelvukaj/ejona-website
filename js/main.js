@@ -473,7 +473,7 @@ async function loadProjects() {
         // Load project list from index file
         let projectFiles = [];
         try {
-            const indexResponse = await fetch('content/projects/index.json');
+            const indexResponse = await fetch('content/project-index.json');
             if (indexResponse.ok) {
                 const indexData = await indexResponse.json();
                 projectFiles = indexData.projects || [];
