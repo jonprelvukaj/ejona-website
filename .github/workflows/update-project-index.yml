@@ -35,5 +35,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add content/project-index.json
-          git commit -m "Auto-update project index"
+          git commit -m "Auto-update project index [skip ci]"
           git push
