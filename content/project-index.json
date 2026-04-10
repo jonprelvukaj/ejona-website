@@ -1,7 +1,6 @@
 {
   "projects": [
     "city-water-infrastructure.json",
-    "fire-protection-system.json",
     "hospital-elevator-system.json",
     "hotel-climate-control.json",
     "industrial-hvac.json",
